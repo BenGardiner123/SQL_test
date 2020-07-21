@@ -5,7 +5,7 @@ ON co.WarehouseLocation = b.WarehouseLocation
 AND co.CourseID = b.CourseID
 AND co.CourseDate = b.CourseDate
 
-INNER JOIN CUSTOMER c
+LEFT JOIN CUSTOMER c
 ON c.CustomerID = b.CustomerID 
 
 INNER JOIN STAFF_ALLOCATION sa
